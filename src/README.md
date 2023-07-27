@@ -2,16 +2,17 @@
 home: true
 layout: BlogHome
 icon: home
-title: 博客主页
+title: 主页
 heroImage: /logo.svg
-heroText: 你博客的名称
+heroText: 寒舞博客
 heroFullScreen: true
-tagline: 你可以在这里放置你的口号与标语
+tagline: 每天进步一点点
+bgImage: /assets/images/bg.png
 projects:
   - icon: project
     name: 项目名称
     desc: 项目详细描述
-    link: https://你的项目链接
+    link: https://你的项目链接ef8491
 
   - icon: link
     name: 链接名称

@@ -1,7 +1,9 @@
 ---
-title: 演示
+title: webpack
 index: false
-icon: laptop-code
+icon: webpack
+dir:
+  order: 5
 category:
   - 使用指南
 ---

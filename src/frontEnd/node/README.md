@@ -1,7 +1,9 @@
 ---
-title: 演示
+title: node
 index: false
-icon: laptop-code
+icon: node
+dir:
+  order: 4
 category:
   - 使用指南
 ---

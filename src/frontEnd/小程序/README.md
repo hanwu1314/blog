@@ -1,7 +1,9 @@
 ---
-title: 演示
+title: 小程序
 index: false
-icon: laptop-code
+icon: xiaochengxu
+dir:
+  order: 9
 category:
   - 使用指南
 ---

@@ -1,7 +1,9 @@
 ---
-title: 演示
+title: JavaScript
 index: false
-icon: laptop-code
+icon: JavaScript
+dir:
+  order: 3
 category:
   - 使用指南
 ---

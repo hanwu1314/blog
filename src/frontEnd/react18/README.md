@@ -1,7 +1,9 @@
 ---
-title: 演示
+title: react18
 index: false
-icon: laptop-code
+icon: react
+dir:
+  order: 8
 category:
   - 使用指南
 ---

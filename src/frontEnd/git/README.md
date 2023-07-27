@@ -1,7 +1,9 @@
 ---
-title: 演示
+title: git
 index: false
-icon: laptop-code
+icon: githublogo
+dir:
+  order: 6
 category:
   - 使用指南
 ---

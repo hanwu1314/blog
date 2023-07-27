@@ -1,7 +1,9 @@
 ---
-title: 演示
+title: vue3
 index: false
-icon: laptop-code
+icon: Vue
+dir:
+  order: 7
 category:
   - 使用指南
 ---
