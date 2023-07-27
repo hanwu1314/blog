@@ -9,7 +9,7 @@ export default hopeTheme({
   hostname: "https://mister-hope.github.io",
 
   author: {
-    name: "Mr.Hope",
+    name: "Mr.HanWu",
     url: "https://mister-hope.com",
   },
 
@@ -32,44 +32,17 @@ export default hopeTheme({
   displayFooter: true,
 
   blog: {
-    description: "一个前端开发者",
+    description: "一个全栈开发者",
     intro: "/intro.html",
     medias: {
-      Baidu: "https://example.com",
-      BiliBili: "https://example.com",
-      Bitbucket: "https://example.com",
-      Dingding: "https://example.com",
-      Discord: "https://example.com",
-      Dribbble: "https://example.com",
-      Email: "mailto:info@example.com",
-      Evernote: "https://example.com",
-      Facebook: "https://example.com",
-      Flipboard: "https://example.com",
-      Gitee: "https://example.com",
-      GitHub: "https://example.com",
-      Gitlab: "https://example.com",
-      Gmail: "mailto:info@example.com",
-      Instagram: "https://example.com",
-      Lark: "https://example.com",
-      Lines: "https://example.com",
-      Linkedin: "https://example.com",
-      Pinterest: "https://example.com",
-      Pocket: "https://example.com",
+      BiliBili: "https://space.bilibili.com/483819511",
+      Email: "mailto:ycyang2051@outlook.com",
+      Gitee: "https://gitee.com/hanwu101",
+      GitHub: "https://github.com/LingHanwu",
       QQ: "https://example.com",
-      Qzone: "https://example.com",
-      Reddit: "https://example.com",
-      Rss: "https://example.com",
-      Steam: "https://example.com",
-      Twitter: "https://example.com",
-      Wechat: "https://example.com",
-      Weibo: "https://example.com",
-      Whatsapp: "https://example.com",
-      Youtube: "https://example.com",
-      Zhihu: "https://example.com",
-      MrHope: ["https://mister-hope.com", MR_HOPE_AVATAR],
     },
   },
-
+// 加密配置
   encrypt: {
     config: {
       "/demo/encrypt.html": ["1234"],
@@ -84,33 +57,35 @@ export default hopeTheme({
   plugins: {
     blog: true,
 
+      // 评论服务
     comment: {
-      // You should generate and use your own comment service
       provider: "Waline",
       serverURL: "https://waline-comment.vuejs.press",
     },
 
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
-      align: true,
-      attrs: true,
-      chart: true,
-      codetabs: true,
-      demo: true,
-      echarts: true,
-      figure: true,
-      flowchart: true,
-      gfm: true,
-      imgLazyload: true,
-      imgSize: true,
-      include: true,
-      katex: true,
-      mark: true,
-      mermaid: true,
+      align: true,   // 自动对齐
+      attrs: true,//属性支持
+      chart: true,//chart图表支持
+      codetabs: true,//代码组
+      demo: true,//代码示例
+      echarts: true,//是否启用 echarts 图表支持
+      figure: true,//是否将单独的图片渲染为
+      // flowchart: true,// 是否启用 flowchart 流程图
+      gfm: true,//是否启用标准的 GitHub Favor Markdown 支持
+      imgLazyload: true,//是否启用原生的图片懒加载
+      imgSize: true,//是否启用图片大小标记支持
+      include: true,//是否启用导入语法支持
+      katex: true,// katex语法支持
+      mark: true,//是否启用标注支持
+      mermaid: true,//是否启用 Mermaid 流程图支持
       playground: {
         presets: ["ts", "vue"],
       },
+        // 是否启用幻灯片支持
       presentation: ["highlight", "math", "search", "notes", "zoom"],
+        // 关键词显示增强选项
       stylize: [
         {
           matcher: "Recommended",
@@ -124,9 +99,13 @@ export default hopeTheme({
           },
         },
       ],
+        // 是否启用下角标格式支持
       sub: true,
+        // 是否启用上角标格式支持
       sup: true,
+        // 是否启用标签页分组
       tabs: true,
+        //是否启用 v-pre 容器
       vPre: true,
       vuePlayground: true,
     },
