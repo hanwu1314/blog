@@ -1,6 +1,7 @@
 import {hopeTheme} from "vuepress-theme-hope";
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
+// @ts-ignore
 export default hopeTheme({
     hostname: "https://ycyang.site",
 
@@ -13,19 +14,23 @@ export default hopeTheme({
 
     logo: "/logo.svg",
 
-    repo: "hanwu101/blog",
+    repo: "https://gitee.com/hanwu101/blog",
     repoLabel: "Gitee",
     repoDisplay: false,
+    // 文档在仓库中的目录
     docsDir: "src",
-
+    // 仓库地址  默认同主题
+    // docsRepo:"",
+    // 文档存放的分支
+    docsBranch:"pro",
     // navbar
     navbar,
 
     // sidebar
     sidebar,
 
-    footer: "默认页脚",
-
+    footer: "冀ICP备2022022509号-1",
+    copyright:"MIT Licensed | Copyright © 2023-present Mr.HanWu",
     displayFooter: true,
 
     blog: {
@@ -50,12 +55,22 @@ export default hopeTheme({
         editLink: "在 GitHub 上编辑此页",
     },
 
+
     plugins: {
         blog: true,
         // 评论服务
         comment: {
             provider: "Waline",
-            serverURL: "https://waline-comment.vuejs.press",
+            // 个人部署Waline
+            serverURL: "http://147.161.33.73:8360/",
+            emoji: [
+                '//unpkg.com/@waline/emojis@1.1.0/weibo',
+                '//unpkg.com/@waline/emojis@1.1.0/bilibili',
+                '//unpkg.com/@waline/emojis@1.1.0/qq',
+                '//unpkg.com/@waline/emojis@1.1.0/bmoji',
+                '//unpkg.com/@waline/emojis@1.1.0/tieba',
+                '//unpkg.com/@waline/emojis@1.1.0/alus'
+            ],
         },
         // markdown 配置
         mdEnhance: {
@@ -103,6 +118,19 @@ export default hopeTheme({
             vPre: true,
             vuePlayground: true,
         },
+        // 根据git提交时间决定文件贡献时间
+        git:true,
+        // 启用版权
+        copyright:{
+            global:true,
+            // 最少多少文字以上才附带版权信息  默认100
+            // triggerWords:100
+        },
+        // 代码复制
+        copyCode: {},
+
+
+
         // uncomment these if you want a PWA
         // pwa: {
         //   favicon: "/favicon.ico",
