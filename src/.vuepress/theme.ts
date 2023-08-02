@@ -62,7 +62,7 @@ export default hopeTheme({
         comment: {
             provider: "Waline",
             // 个人部署Waline
-            serverURL: "http://147.161.33.73:8360/",
+            serverURL: "https://waline-1-r0608039.deta.app/",
             emoji: [
                 '//unpkg.com/@waline/emojis@1.1.0/weibo',
                 '//unpkg.com/@waline/emojis@1.1.0/bilibili',
