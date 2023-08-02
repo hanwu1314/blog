@@ -5,7 +5,7 @@ export default defineUserConfig({
   base: "/",
 
   lang: "zh-CN",
-  title: "寒舞博客",
+  title: "寒舞知识宝库",
   description: "每天比昨天进步一点点",
 
   theme,

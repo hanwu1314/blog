@@ -6,7 +6,7 @@ export default hopeTheme({
     hostname: "https://ycyang.site",
 
     author: {
-        name: "Mr.HanWu",
+        name: "Mr.DanceCold",
         url: "https://mister-hope.com",
     },
 
@@ -30,7 +30,7 @@ export default hopeTheme({
     sidebar,
 
     footer: "冀ICP备2022022509号-1",
-    copyright:"MIT Licensed | Copyright © 2023-present Mr.HanWu",
+    copyright:"MIT Licensed | Copyright © 2023-present Mr.DanceCold",
     displayFooter: true,
 
     blog: {
