@@ -50,11 +50,11 @@ jobs:
         uses: actionhub/gitee-pages@v1.0.0
         with:
           # 用户名
-          username: ${{ GITEE_USER }}
+          username: ${{ secrets.GITEE_USER }}
           # 密码
-          password: ${{ GITEE_PASSWORD }}
+          password: ${{ secrets.GITEE_PASSWORD }}
           # 仓库网址
-          repository: ${{ GITEE_REPOSITORY }}
+          repository: ${{ secrets.GITEE_REPOSITORY }}
           # 部署分支
           branch: gh-pages
           # 部署目录
