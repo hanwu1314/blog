@@ -1,0 +1,42 @@
+
+name: 推送Gitee
+
+on:
+  push:
+    branches:
+      # 确保这是你正在使用的分支名称
+      - gh-pages
+
+permissions:
+  contents: write
+
+jobs:
+  deploy-gh-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: 部署Gitee
+        uses: shanghaobo/github-branch-gitee@v1.0.0
+        with:
+          # Github 仓库，例如 username/repo
+          github_repo: hanwu1314/blog
+          # Github 分支，例如 main
+          github_branch: gh-pages
+          # Gitee 仓库，例如 username/repo
+          gitee_repo: ${{ secrets.GITEE_REPOSITORY }}
+          # Gitee 分支，例如 master
+          gitee_branch: gh-pages
+          # Gitee 用户名，用于登录。
+          username: ${{ secrets.GITEE_USER }}
+          # Gitee 密码，用于登录。
+          password: ${{ secrets.GITEE_PASSWORD }}
+          # GitHub 令牌，用于私有仓库的拉取。
+          token: ${{ secrets.GH_PAGE_TOKEN }}
+    
+    
+    
+    
+    
