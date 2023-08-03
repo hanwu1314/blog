@@ -1,4 +1,5 @@
 import {hopeTheme} from "vuepress-theme-hope";
+import { copyCodePlugin } from "vuepress-plugin-copy-code2";
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 // @ts-ignore
@@ -57,6 +58,21 @@ export default hopeTheme({
 
 
     plugins: {
+        components:{
+            components:[
+                "ArtPlayer",
+                "AudioPlayer",
+                "Badge",
+                "BiliBili",
+                "PDF",
+                "Share",
+                "SiteInfo",
+                "StackBlitz",
+                "VideoPlayer",
+                "XiGua",
+                "YouTube",
+            ]
+        },
         blog: true,
         // 评论服务
         comment: {
@@ -78,9 +94,9 @@ export default hopeTheme({
             attrs: true,//属性支持
             chart: true,//chart图表支持
             codetabs: true,//代码组
-            demo: true,//代码示例
-            echarts: true,//是否启用 echarts 图表支持
-            figure: true,//是否将单独的图片渲染为
+            // demo: true,//代码示例
+            // echarts: true,//是否启用 echarts 图表支持
+            // figure: true,//是否将单独的图片渲染为
             // flowchart: true,// 是否启用 flowchart 流程图
             gfm: true,//是否启用标准的 GitHub Favor Markdown 支持
             imgLazyload: true,//是否启用原生的图片懒加载
@@ -88,7 +104,7 @@ export default hopeTheme({
             include: true,//是否启用导入语法支持
             katex: true,// katex语法支持
             mark: true,//是否启用标注支持
-            mermaid: true,//是否启用 Mermaid 流程图支持
+            // mermaid: true,//是否启用 Mermaid 流程图支持
             playground: {
                 presets: ["ts", "vue"],
             },
@@ -127,9 +143,8 @@ export default hopeTheme({
             // triggerWords:100
         },
         // 代码复制
-        copyCode: {},
-
-
+        // copyCode: {
+        // },
 
         // uncomment these if you want a PWA
         // pwa: {
