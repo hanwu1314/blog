@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://ycyang.site/blog/sitemap.xml
+Sitemap: https://ycyang.site/sitemap.xml
