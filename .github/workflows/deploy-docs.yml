@@ -46,15 +46,15 @@ jobs:
           branch: gh-pages
           folder: src/.vuepress/dist
 
-      - name: Auto Refresh Gitee Pages
-        uses: actionhub/gitee-pages@v1.0.0
+      - name: 部署Gitee
+        uses: yanglbme/gitee-pages-action@v1.4.1
         with:
           # 用户名
-          username: ${{ secrets.GITEE_USER }}
+          gitee-username: ${{ secrets.GITEE_USER }}
           # 密码
-          password: ${{ secrets.GITEE_PASSWORD }}
+          gitee-password: ${{ secrets.GITEE_PASSWORD }}
           # 仓库网址
-          repository: ${{ secrets.GITEE_REPOSITORY }}
+          gitee-repo: ${{ secrets.GITEE_REPOSITORY }}
           # 部署分支
           branch: gh-pages
           # 部署目录
@@ -72,9 +72,9 @@ jobs:
           # Remote user
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           # Remote port
-          REMOTE_PORT: # optional, default is 22
+          REMOTE_PORT: 22 # optional, default is 22
           # Source directory, path relative to `$GITHUB_WORKSPACE` root, eg: `dist/`
-          SOURCE: src/.vuepress/dist
+          SOURCE: src/.vuepress/dist/
           # Target directory
           TARGET: ${{ secrets.TARGET }}
           # Arguments to pass to rsync
