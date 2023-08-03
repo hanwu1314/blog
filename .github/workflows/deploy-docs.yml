@@ -47,20 +47,22 @@ jobs:
           folder: src/.vuepress/dist
 
       - name: 部署Gitee
-        uses: yanglbme/gitee-pages-action@v1.4.1
+        uses: shanghaobo/github-branch-gitee@v1.0.0
         with:
-          # 用户名
-          gitee-username: ${{ secrets.GITEE_USER }}
-          # 密码
-          gitee-password: ${{ secrets.GITEE_PASSWORD }}
-          # 仓库网址
-          gitee-repo: ${{ secrets.GITEE_REPOSITORY }}
-          # 部署分支
-          branch: gh-pages
-          # 部署目录
-          directory: src/.vuepress/dist
-          # 开启https
-          https: true
+          # Github 仓库，例如 username/repo
+          github_repo: hanwu1314/blog
+          # Github 分支，例如 main
+          github_branch: gh-pages
+          # Gitee 仓库，例如 username/repo
+          gitee_repo: ${{ secrets.GITEE_REPOSITORY }}
+          # Gitee 分支，例如 master
+          gitee_branch: gh-pages
+          # Gitee 用户名，用于登录。
+          username: ${{ secrets.GITEE_USER }}
+          # Gitee 密码，用于登录。
+          password: ${{ secrets.GITEE_PASSWORD }}
+          # GitHub 令牌，用于私有仓库的拉取。
+          token: ${{ secrets.GH_PAGE_TOKEN }}
       # 部署应用
       - name: 上传云服务器
         uses: easingthemes/ssh-deploy@v4.1.8
