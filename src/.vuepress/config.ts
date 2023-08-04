@@ -1,4 +1,5 @@
 import { defineUserConfig } from "vuepress";
+import { searchProPlugin } from "vuepress-plugin-search-pro";
 import theme from "./theme.js";
 
 export default defineUserConfig({
@@ -9,7 +10,17 @@ export default defineUserConfig({
   description: "每天比昨天进步一点点",
 
   theme,
+  plugins:[
+      // 搜索框
+      searchProPlugin({
+          locales:{
+              "/":{
+                  placeholder:"开始搜索"
+              }
+          }
+      }),
 
+  ]
   // Enable it with pwa
   // shouldPrefetch: false,
 });

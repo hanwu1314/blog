@@ -1,5 +1,4 @@
 import {hopeTheme} from "vuepress-theme-hope";
-import { copyCodePlugin } from "vuepress-plugin-copy-code2";
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 // @ts-ignore
@@ -65,6 +64,7 @@ export default hopeTheme({
                 "Badge",
                 "BiliBili",
                 "PDF",
+                "CodePen",
                 "Share",
                 "SiteInfo",
                 "StackBlitz",
@@ -129,7 +129,7 @@ export default hopeTheme({
             // 是否启用上角标格式支持
             sup: true,
             // 是否启用标签页分组
-            tabs: true,
+            // tabs: true,
             //是否启用 v-pre 容器
             vPre: true,
             vuePlayground: true,
@@ -143,8 +143,13 @@ export default hopeTheme({
             // triggerWords:100
         },
         // 代码复制
-        // copyCode: {
-        // },
+        copyCode: {
+            locales:{
+                "/":{
+                    copied:"小手一抖，代码就是我的了",
+                }
+            },
+        },
 
         // uncomment these if you want a PWA
         // pwa: {
@@ -203,4 +208,5 @@ export default hopeTheme({
         //   },
         // },
     },
+
 });
