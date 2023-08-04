@@ -10,7 +10,7 @@ export default hopeTheme({
         url: "https://mister-hope.com",
     },
 
-    iconAssets: "//at.alicdn.com/t/c/font_4186552_cqx7ads7gh.css",
+    iconAssets: "//at.alicdn.com/t/c/font_4186552_znl14zslpw.css",
 
     logo: "/logo.svg",
 

@@ -2,9 +2,10 @@
 title: URL统一资源定位符
 index: true
 order: 3
-icon: write
+icon: bijiben
 tags:
   - html
+category: "html"
 ---
 
 

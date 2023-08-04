@@ -1,8 +1,9 @@
 ---
 title: css动画收纳
 index: true
-icon: laptop-code
+icon: bijiben
 order: -1
-category:
-  - 测试
+tag:
+  - CSS
+category: "css"
 ---
