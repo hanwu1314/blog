@@ -3,8 +3,8 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 // @ts-ignore
 export default hopeTheme({
-    hostname: "https://ycyang.site",
 
+    hostname: "https://ycyang.site",
     author: {
         name: "Mr.DanceCold",
         url: "https://mister-hope.com",
