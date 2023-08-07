@@ -144,9 +144,6 @@ composer dump-autoload
 ```
 
 执行成功以后会自动将类文件映射
-
-![](99999Attachment/Pasted%20image%2020230801103748.png)
-
 ---
 
 ## 配置文件映射
@@ -239,6 +236,8 @@ echo \admin\controller\User1::index() . '<br>';
 ```
 
 ---
+
+![img.png](./assets/14-01.webp)
 
 ## 第三方包
 
