@@ -3,8 +3,6 @@ title: css盒模型
 index: true
 icon: bijiben
 order: 6
-tag:
-  - CSS
 category: "css"
 ---
 

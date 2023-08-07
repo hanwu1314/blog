@@ -4,8 +4,6 @@ index: true
 icon: bijiben
 order: 1
 cover: /assets/images/cover2.webp
-tag:
-  - CSS
 category: "css"
 ---
 

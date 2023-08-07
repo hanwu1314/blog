@@ -3,8 +3,6 @@ title: URL统一资源定位符
 index: true
 order: 3
 icon: bijiben
-tags:
-  - html
 category: "html"
 ---
 

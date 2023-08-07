@@ -3,8 +3,6 @@ title: CSS文本
 index: true
 icon: bijiben
 order: 2
-tag:
-  - CSS
 category: "css"
 ---
 

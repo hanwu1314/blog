@@ -3,8 +3,6 @@ title: CSS选择器
 index: true
 icon: bijiben
 order: 4
-tag:
-  - CSS
 category: "css"
 ---
 
