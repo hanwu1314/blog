@@ -240,8 +240,6 @@ echo \admin\controller\User1::index() . '<br>';
 
 ---
 
-![](99999Attachment/Pasted%20image%2020230801105708.png)
-
 ## 第三方包
 
 ### composer切换阿里源
