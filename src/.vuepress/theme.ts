@@ -9,7 +9,7 @@ export default hopeTheme({
         name: "Mr.DanceCold",
         url: "https://mister-hope.com",
     },
-
+    fullscreen: true,
     iconAssets: "//at.alicdn.com/t/c/font_4186552_znl14zslpw.css",
 
     logo: "/logo.svg",
@@ -21,18 +21,14 @@ export default hopeTheme({
     docsDir: "src",
     // 仓库地址  默认同主题
     // docsRepo:"",
-    // 文档存放的分支
-    docsBranch:"pro",
-    // navbar
+    docsBranch:"gh-pages",
     navbar,
-
-    // sidebar
     sidebar,
 
     footer: "冀ICP备2022022509号-1",
     copyright:"MIT Licensed | Copyright © 2023-present Mr.DanceCold",
     displayFooter: true,
-
+    darkmode:"enable",
     blog: {
 
         description: "一个全栈开发者",
@@ -42,10 +38,9 @@ export default hopeTheme({
             Email: "mailto:ycyang2051@outlook.com",
             Gitee: "https://gitee.com/hanwu101",
             GitHub: "https://github.com/LingHanwu",
-            QQ: "https://example.com",
+            // QQ: "https://example.com",
         },
     },
-// 加密配置
     encrypt: {
         config: {
             "/demo/encrypt.html": ["1234"],
@@ -57,6 +52,7 @@ export default hopeTheme({
 
 
     plugins: {
+        // prismjs:false,
         components:{
             components:[
                 "ArtPlayer",
@@ -74,10 +70,8 @@ export default hopeTheme({
             ]
         },
         blog: true,
-        // 评论服务
         comment: {
             provider: "Waline",
-            // 个人部署Waline
             serverURL: "https://waline-1-r0608039.deta.app/",
             emoji: [
                 '//unpkg.com/@waline/emojis@1.1.0/weibo',
@@ -88,7 +82,6 @@ export default hopeTheme({
                 '//unpkg.com/@waline/emojis@1.1.0/alus'
             ],
         },
-        // markdown 配置
         mdEnhance: {
             align: true,   // 自动对齐
             attrs: true,//属性支持
@@ -136,13 +129,9 @@ export default hopeTheme({
         },
         // 根据git提交时间决定文件贡献时间
         git:true,
-        // 启用版权
         copyright:{
             global:true,
-            // 最少多少文字以上才附带版权信息  默认100
-            // triggerWords:100
         },
-        // 代码复制
         copyCode: {
             locales:{
                 "/":{

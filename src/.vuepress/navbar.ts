@@ -4,7 +4,7 @@ export default navbar([
     "/",
     "/demo/",
     "/frontEnd/",
-    "/backEnd",
-    "/project",
+    "/backEnd/",
+    "/project/",
 
 ]);

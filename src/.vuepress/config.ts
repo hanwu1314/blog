@@ -11,16 +11,12 @@ export default defineUserConfig({
 
   theme,
   plugins:[
-      // 搜索框
       searchProPlugin({
           locales:{
               "/":{
                   placeholder:"开始搜索"
               }
           }
-      }),
-
+      })
   ]
-  // Enable it with pwa
-  // shouldPrefetch: false,
 });
