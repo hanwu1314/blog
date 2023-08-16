@@ -36,6 +36,14 @@ export default sidebar({
             collapsible: true,
             children: "structure",
         },
+        {
+            text: "图书馆",
+            // icon: "books",
+            prefix: "books/",
+            link: "books/",
+            collapsible: true,
+            children: "structure",
+        },
         "intro",
     ],
 });
