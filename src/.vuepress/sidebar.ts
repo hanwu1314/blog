@@ -4,14 +4,6 @@ export default sidebar({
     "/": [
         "",
         {
-            text: "演示",
-            icon: "laptop-code",
-            prefix: "demo/",
-            link: "demo/",
-            collapsible: true,
-            children: "structure",
-        },
-        {
             text: "前端",
             icon: "WEBqianduan",
             prefix: "frontEnd/",
