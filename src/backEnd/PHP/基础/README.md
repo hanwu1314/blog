@@ -1,5 +1,5 @@
 ---
-title: 基础
+title: base
 index: false
 ---
 
