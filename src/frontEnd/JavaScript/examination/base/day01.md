@@ -6,9 +6,12 @@ icon: bijiben
 category: "js"
 ---
 
+:::info 问题
 1、截取字符串abcdace的ace
 2、数组的排序方法
+:::
 
+:::details 答案
 ```js
 // ?t1:截取字符串abcdace的ace
 // 1.String.slice
@@ -126,7 +129,6 @@ console.log("🚀 ~ file: day01.js:113 ~ result:", result)
 
 ```
 
-
 ```sh
 🚀 ~ file: day01.js:9 ~ result: ace
 🚀 ~ file: day01.js:12 ~ result: ace
@@ -138,6 +140,8 @@ console.log("🚀 ~ file: day01.js:113 ~ result:", result)
 🚀 ~ file: day01.js:113 ~ result: [ 1, 2, 4, 5, 7, 8 ]
 ```
 
+
+:::
 
 
 
