@@ -49,3 +49,46 @@ text-align： 设置文本对齐
 
 letter-spacing、word-spacing分别用于设置字母、单词之间的间距
 - 默认是0，可以设置为负数
+
+
+### vertical-align
+
+- baseline(默认值)：基线对齐（你得先明白什么是基线）
+- top：把行内级盒子的顶部跟line boxes顶部对齐
+- middle：行内级盒子的中心点与父盒基线加上x-height一半的线对齐
+- bottom：把行内级盒子的底部跟line box底部对齐
+	- percentage：把行内级盒子提升或者下降一段距离（距离相对于line-height计算\元素高度）， 0%意味着同baseline一样
+	- length：把行内级盒子提升或者下降一段距离，0cm意味着同baseline一样
+
+解决图片下边缘的间隙方法:
+方法一: 设置成top/middle/bottom
+方法二: 将图片设置为block元素
+
+
+## 属性补充
+
+### white-space
+
+**white-space用于设置空白处理和换行规则**
+
+- normal：   合并所有连续的空白，<span style="color:#00b0f0">允许</span>单词超屏时自动换行
+- nowrap：  合并所有连续的空白，<span style="color:#ffc000">不允许</span>单词超屏时自动换行
+- pre：          <span style="color:#ff0000">阻止</span>合并所有连续的空白，<span style="color:#ffc000">不允许</span>单词超屏时自动换行
+- pre-wrap：<span style="color:#ff0000">阻止</span>合并所有连续的空白，<span style="color:#00b0f0">允许</span>单词超屏时自动换行
+- pre-line：  合并所有连续的空白（但保留换行），<span style="color:#00b0f0">允许</span>单词超屏时自动换行
+
+### text-overflow
+
+text-overflow通常用来设置文字溢出时的行为
+- clip：溢出的内容直接裁剪掉（字符可能会显示不完整）
+- ellipsis：溢出那行的结尾处用省略号表示
+
+text-overflow生效的前提是overflow不为visible
+
+常见的用法-css文本溢出省略号：
+
+```css
+white-space:nowrap;
+text-overflow:ellipsis;
+overflow:hidden;
+```
