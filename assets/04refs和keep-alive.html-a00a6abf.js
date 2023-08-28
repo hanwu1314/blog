@@ -1,1 +1,0 @@
-import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o as r,c as t}from"./app-052fd2e0.js";const _={};function c(o,s){return r(),t("div")}const a=e(_,[["render",c],["__file","04refs和keep-alive.html.vue"]]);export{a as default};

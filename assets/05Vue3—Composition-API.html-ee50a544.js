@@ -1,1 +1,0 @@
-import{_ as o}from"./plugin-vue_export-helper-c27b6911.js";import{o as e,c as t}from"./app-052fd2e0.js";const _={};function c(r,n){return e(),t("div")}const m=o(_,[["render",c],["__file","05Vue3—Composition-API.html.vue"]]);export{m as default};
