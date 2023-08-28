@@ -1,7 +1,7 @@
 ---
 title: 邂逅Vue.js开发
 icon: bijiben
-category: "php"
+category: "vue"
 order: 1
 ---
 

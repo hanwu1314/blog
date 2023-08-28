@@ -1,7 +1,7 @@
 ---
 title: Vue的模板语法
 icon: bijiben
-category: "php"
+category: "vue"
 order: 2
 ---
 ## Mustache插值语法

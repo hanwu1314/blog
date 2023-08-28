@@ -1,9 +1,9 @@
 ---
-title: 阶段一
-index: false
+title: 阶段二
+index: true
 icon: Vue
 dir:
-  order: 1
+  order: 2
 category:
   - 使用指南
 ---
