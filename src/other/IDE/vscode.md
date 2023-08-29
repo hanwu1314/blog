@@ -6,14 +6,27 @@ icon: bijiben
 category: "IDE"
 ---
 
-## vscode卸载
+## vscode卸载  
 
-控制面板卸载或者运行安装目录下的unins000.exe
-win+R 输入`%userprofile%`打开当前C盘用户目录
-删除.vscode文件夹
+1.控制面板卸载或者运行安装目录下的unins000.exe
 
-## vscode插件
+2.win+R 输入`%userprofile%`当前C盘用户目录,删除.vscode文件夹
 
+```shell
+%userprofile%
+```
+
+3.win+R输入`%appdata%`进入`AppData\Roaming`,删除Code文件夹
+
+```sh
+%appdata%
+```
+
+
+
+
+## vscode插件  
+  
 | 插件                                        | 说明                                                                                                               |
 |:------------------------------------------|:-----------------------------------------------------------------------------------------------------------------|
 | Auto Close Tag                            | 自动闭合标签                                                                                                           |
@@ -65,6 +78,21 @@ win+R 输入`%userprofile%`打开当前C盘用户目录
 | Vue Peek                                  | 允许Vue组件跳转                                                                                                        |
 | Vite                                      | Vite在Vscode内置预览                                                                                                  |
 | YAML                                      | yaml支持                                                                                                           |  
+
+
+## vscode常用快捷键
+
+`Ctrl` + `B`             侧边栏
+`Ctrl` + `J`             底边栏
+`Ctrl` + `Shint` +`N`             新建窗口
+`Ctrl` + `R`             打开历史文件夹
+`Ctrl` + `P`             命令行窗口
+`Ctrl` + `,`             打开设置
+
+
+
+
+
 
 
 
