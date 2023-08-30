@@ -1,6 +1,6 @@
 ---
 title: 阶段二
-index: fasle
+index: false
 icon: Vue
 dir:
   order: 2
