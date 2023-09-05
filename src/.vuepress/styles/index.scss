@@ -1,10 +1,27 @@
 // place your custom styles here
+:root {
+  --vp-c-text-1: rgba(255, 255, 245, .86);
+  --vp-c-text-2: rgba(235, 235, 245, .6);
+  --vp-c-text-3: rgba(235, 235, 245, .38);
+}
+
+$theme-color: #8f34fe;
+$theme-text-color: rgba(255, 255, 245, .86);
+
+body {
+  color: $theme-text-color
+}
+
 h2 {
-  color: #e77860;
+  font-size: xx-large;
 }
 
 h3 {
-  color: #4189cc;
+  position: relative;
+}
+
+h4 {
+  position: relative;
 }
 
 code {
@@ -12,6 +29,24 @@ code {
   padding: .15em .5em;
   border-radius: 4px;
   color: #ed9719;
+}
+
+
+mark {
+  background-color: #7652d8;
+  color: #fff;
+  border-radius: 10px;
+  padding: 2px 3px;
+}
+
+html[data-theme=dark] blockquote {
+  border-color: $theme-color;
+  color: $theme-text-color;
+  background-image: linear-gradient(-45deg, #be34fe48 10%, #47cbff2d 95%);
+}
+
+strong {
+  color: $theme-color
 }
 
 #main-title {
