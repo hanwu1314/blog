@@ -36,8 +36,8 @@ export default hopeTheme({
         medias: {
             BiliBili: "https://space.bilibili.com/483819511",
             Email: "mailto:hanwu1314@outlook.com",
-            Gitee: "https://gitee.com/hanwu101",
-            GitHub: "https://github.com/LingHanwu",
+            Gitee: "https://gitee.com/hanwu1314",
+            GitHub: "https://github.com/hanwu1314",
             // QQ: "https://example.com",
         },
     },
@@ -87,6 +87,7 @@ export default hopeTheme({
             attrs: true,//属性支持
             chart: true,//chart图表支持
             codetabs: true,//代码组
+            card: true,
             // demo: true,//代码示例
             // echarts: true,//是否启用 echarts 图表支持
             // figure: true,//是否将单独的图片渲染为

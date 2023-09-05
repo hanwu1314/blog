@@ -7,7 +7,7 @@ heroText: HanwuThesaurus
 tagline: 每天进步一点点
 actions:
   - text: 开始阅读
-    link: /home/
+    link: /frontEnd/
     type: primary
 footer: 寒舞最棒(๑•̀ㅂ•́)و✧
 ---
