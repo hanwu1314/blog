@@ -159,11 +159,6 @@ export default {
 
 this不能指向组件实例，因为在被setup调用之前，data、computed、methods等没有被解析，无法在setup中获取this
 
-setup中不可以使用this，但接收两个参数，如果我们想给
-
-
-
-
 ## setup语法糖（顶层写法）
 
 `<script setup>` 是在单文件组件(SFC)中使用组合式API的编译时语法糖，当同时使用SFC与组合式API时则推荐该语法
