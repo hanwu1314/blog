@@ -1,4 +1,4 @@
-import {hopeTheme} from "vuepress-theme-hope";
+import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 // @ts-ignore
@@ -12,7 +12,7 @@ export default hopeTheme({
     fullscreen: true,
     iconAssets: "//at.alicdn.com/t/c/font_4186552_znl14zslpw.css",
 
-    logo: "/logo.svg",
+    logo: "/hanwu_logo.png",
 
     repo: "https://gitee.com/hanwu101/blog",
     repoLabel: "Gitee",
@@ -21,21 +21,21 @@ export default hopeTheme({
     docsDir: "src",
     // 仓库地址  默认同主题
     // docsRepo:"",
-    docsBranch:"gh-pages",
+    docsBranch: "gh-pages",
     navbar,
     sidebar,
 
     footer: "冀ICP备2022022509号-1",
-    copyright:"MIT Licensed | Copyright © 2023-present Mr.DanceCold",
+    copyright: "MIT Licensed | Copyright © 2023-present Mr.DanceCold",
     displayFooter: true,
-    darkmode:"enable",
+    darkmode: "enable",
     blog: {
 
         description: "一个全栈开发者",
         intro: "/intro.html",
         medias: {
             BiliBili: "https://space.bilibili.com/483819511",
-            Email: "mailto:ycyang2051@outlook.com",
+            Email: "mailto:hanwu1314@outlook.com",
             Gitee: "https://gitee.com/hanwu101",
             GitHub: "https://github.com/LingHanwu",
             // QQ: "https://example.com",
@@ -53,8 +53,8 @@ export default hopeTheme({
 
     plugins: {
         // prismjs:false,
-        components:{
-            components:[
+        components: {
+            components: [
                 "ArtPlayer",
                 "AudioPlayer",
                 "Badge",
@@ -107,11 +107,11 @@ export default hopeTheme({
             stylize: [
                 {
                     matcher: "Recommended",
-                    replacer: ({tag}) => {
+                    replacer: ({ tag }) => {
                         if (tag === "em")
                             return {
                                 tag: "Badge",
-                                attrs: {type: "tip"},
+                                attrs: { type: "tip" },
                                 content: "Recommended",
                             };
                     },
@@ -128,14 +128,14 @@ export default hopeTheme({
             vuePlayground: true,
         },
         // 根据git提交时间决定文件贡献时间
-        git:true,
-        copyright:{
-            global:true,
+        git: true,
+        copyright: {
+            global: true,
         },
         copyCode: {
-            locales:{
-                "/":{
-                    copied:"小手一抖，代码就是我的了",
+            locales: {
+                "/": {
+                    copied: "小手一抖，代码就是我的了",
                 }
             },
         },

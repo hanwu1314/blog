@@ -1,12 +1,17 @@
 ---
 home: true
-layout: BlogHome
 icon: home
-title: 主页
-heroImage: /logo.svg
-heroText: 寒舞知识宝库
-heroFullScreen: true
+title: HanwuThesaurus
+heroImage: /hanwu_logo.png
+heroText: HanwuThesaurus
 tagline: 每天进步一点点
-bgImage: /assets/images/bg.webp
+actions:
+  - text: 开始阅读
+    link: /home/
+    type: primary
 footer: 寒舞最棒(๑•̀ㅂ•́)و✧
 ---
+
+## 关于网站
+
+本站是个人积累的笔记归档站点,当前已提交笔记 100+
