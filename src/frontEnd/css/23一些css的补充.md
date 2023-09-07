@@ -17,6 +17,54 @@ category: "css"
   box-shadow: 8px 4px 9px 3px rgb(0 0 0 / 20%);
 ```
 
+## 文本超出省略号
+
+### 单行文本超出省略号
+
+
+```html
+<div class="outer">
+  <div class="inner">
+    悄悄是别离的笙箫，沉默是今晚的康桥
+  </div>
+</div>
+```
+
+
+```css
+.outer{
+  width:9rem;
+
+}
+.inner{
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+```
+
+
+
+### 指定行文本超出省略号
+
+
+```less
+.outer{
+ width:5rem;
+}
+.inner{
+   overflow: hidden;
+   display:-webkit-box;
+   -webkit-line-clamp:2;             // 指定行数 
+   -webkit-box-orient:vertical;      // 盒子垂直布局其内容  非标准但兼容主流浏览器
+}
+```
+
+[-webkit-line-clamp | MDN (mozilla.org)](https://developer.mozilla.org/zh-CN/docs/Web/CSS/-webkit-line-clamp)
+
+<iframe src="https://codepen.io/hanwu1314/pen/MWZbORo" allow="fullscreen" allowfullscreen="" style="height: 100%; width: 100%; aspect-ratio: 16 / 9;"></iframe>
+
+
 ## 修改el-input输入框颜色
 
 ```css
