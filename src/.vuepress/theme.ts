@@ -14,9 +14,9 @@ export default hopeTheme({
 
     logo: "/hanwu_logo.png",
 
-    repo: "https://gitee.com/hanwu101/blog",
-    repoLabel: "Gitee",
-    repoDisplay: false,
+    repo: "hanwu1314/blog",
+    repoLabel: "GitHub",
+    repoDisplay: true,
     // 文档在仓库中的目录
     docsDir: "src",
     // 仓库地址  默认同主题
@@ -49,7 +49,11 @@ export default hopeTheme({
     metaLocales: {
         editLink: "在 GitHub 上编辑此页",
     },
-
+    navbarLayout: {
+        start: ["Brand"],
+        center: ["Links"],
+        end: ["Repo", "Search"],
+    },
 
     plugins: {
         // prismjs:false,

@@ -3,6 +3,7 @@ icon: circle-info
 cover: /assets/images/cover4.webp
 title: 寒舞杂谈
 category: 走近作者
+sidebar: false
 ---
 
  
